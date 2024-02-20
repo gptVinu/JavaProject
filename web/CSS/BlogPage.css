@@ -1,0 +1,179 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15-Feb-2024, 6:44:36 pm
+    Author     : vinyak
+*/
+/* -----------header css ------------- */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url("main-bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+  }
+
+  header {
+    background-color: #524b4b;
+    color: #fff;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0 0px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+/* -----------------header css ends here----------- */
+  
+  .blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .blog-card {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .blog-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .blog-details,
+  .blogger-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #faf5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .blog-card:hover .blog-details,
+  .blog-card:hover .blogger-info {
+    opacity: 1;
+  }
+  
+  .blogger-info div {
+    margin-bottom: 5px;
+  }
+  
+  .blog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4285f4;
+  }
+  
+  .blog-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover effect */
+  .blog-card:hover .blog-content {
+    background-color: #e0f7fa; /* Change to the desired highlight color */
+  }
+  
+/* ----------footer page css------- */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .social-icons li {
+    display: inline;
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6347;
+  }

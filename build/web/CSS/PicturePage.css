@@ -1,0 +1,141 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15-Feb-2024, 6:43:55 pm
+    Author     : vinyak
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding-top: 5%;
+    background-image: url("main-bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* -----------header section----- */
+header {
+    background-color: #524b4b;
+    color: #fff;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0 0px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+  /* ------slide page of image section------- */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* -------------header section ends here !!!------------ */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 8px;
+}
+
+.column img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.column img:hover {
+    transform: scale(1.1);
+}
+
+/* ----------footer page css------- */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .social-icons li {
+    display: inline;
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6347;
+  }

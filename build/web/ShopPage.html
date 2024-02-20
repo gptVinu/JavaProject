@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopPage</title>
+    <link rel="stylesheet" href="CSS/ShopPage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="Logo.png" alt="Art Logo">
+          <h2>ART EXHIBITION</h2>
+        </div>
+        <nav>
+          <a href="HomePage.html">Home</a>
+          <a href="PicturePage.html">Pictures</a>
+          <a href="ArtistPage.html">Artists</a>
+          <a href="BlogPage.html">Blog</a>
+          <a href="ShopPage.html">Shop</a>
+          <a href="CRUD_Main_Page.html">--></a>
+        </nav>
+    </header>
+
+    <div class="art-gallery">
+        <!-- Card 1 -->
+        <div class="art-card" onclick="openPaymentPage('Mona Lisa', 'Painter Name 1', 100)">
+            <!-- Replace the src attribute with the dynamic image URL from the database -->
+            <img src="https://media.timeout.com/images/103166735/750/562/image.jpg" alt="Art Image 1" class="art-image">
+            <div class="art-details">
+                <!-- Replace the content with dynamic data from the database -->
+                <div class="art-title">The Mona Lisa</div>
+                <div class="painter-name">Painter Name 1</div>
+                <div class="art-price">$100</div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="art-card" onclick="openPaymentPage('Michelangelo', 'Painter Name 2', 150)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg" alt="Art Image 2" class="art-image">
+            <div class="art-details">
+                <div class="art-title">Michelangelo</div>
+                <div class="painter-name">Painter Name 2</div>
+                <div class="art-price">$150</div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="art-card" onclick="openPaymentPage('Las Meninas by Diego Velázquez', 'Painter Name 3', 120)">
+            <img src="https://media.timeout.com/images/105222680/750/562/image.jpg" alt="Art Image 3" class="art-image">
+            <div class="art-details">
+                <div class="art-title">Las Meninas by Diego Velázquez</div>
+                <div class="painter-name">Painter Name 3</div>
+                <div class="art-price">$120</div>
+            </div>
+        </div>
+        <div class="art-card">
+            <!-- Replace the src attribute with the dynamic image URL from the database -->
+            <img src="https://media.timeout.com/images/103166735/750/562/image.jpg" alt="Art Image 1" class="art-image">
+            <div class="art-details">
+                <!-- Replace the content with dynamic data from the database -->
+                <div class="art-title">The Mona Lisa</div>
+                <div class="painter-name">Painter Name 1</div>
+                <div class="art-price">$100</div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="art-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg" alt="Art Image 2" class="art-image">
+            <div class="art-details">
+                <div class="art-title">Michelangelo</div>
+                <div class="painter-name">Painter Name 2</div>
+                <div class="art-price">$150</div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="art-card">
+            <img src="https://media.timeout.com/images/105222680/750/562/image.jpg" alt="Art Image 3" class="art-image">
+            <div class="art-details">
+                <div class="art-title">Las Meninas by Diego Velázquez</div>
+                <div class="painter-name">Painter Name 3</div>
+                <div class="art-price">$120</div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <div class="footer">
+        <p>&copy; 2023 MyArtExhibition All rights reserved.</p>
+        <p>Address: 123 Main Street, Mumbai, India</p>
+        <p>Phone: <a href=“tel:8898123456”>8898123456</a></p>
+        <p>Email: <a href=“mailto:info@MyArtExhibition.com”>info@MyArtExhibition.com</a></p>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            <li><a href="https://www.LinkedIn.com/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+    <!-- ---------js code--------- -->
+    <script>
+        function openPaymentPage(artTitle, painterName, price) {
+            alert("Opening payment page for: " + artTitle);
+        }
+    </script>
+</body>
+</html>

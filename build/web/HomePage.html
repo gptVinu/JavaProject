@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Exhibition</title>
+    <link rel="stylesheet" href="CSS/HomeStyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="Logo.png" alt="Art Logo">
+          <h2>ART EXHIBITION</h2>
+        </div>
+        <nav>
+          <a href="HomePage.html">Home</a>
+          <a href="PicturePage.html">Pictures</a>
+          <a href="ArtistPage.html">Artists</a>
+          <a href="BlogPage.html">Blog</a>
+          <a href="ShopPage.html">Shop</a>
+          <a href="CRUD_Main_Page.html">>></a>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+      <!-- Slides -->
+      <div class="mySlides fade">
+          <img src="https://images.unsplash.com/photo-1503293050619-6048ffad0dc5?q=80&w=2950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image1">
+      </div>
+
+      <div class="mySlides fade">
+          <img src="https://images.unsplash.com/photo-1563982673461-1ca8b01e9b44?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image2">
+      </div>
+
+      <div class="mySlides fade">
+          <img src="https://plus.unsplash.com/premium_photo-1677609991615-0657859f0a8a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image3">
+      </div>
+      <div class="mySlides fade">
+        <img src="https://images.unsplash.com/photo-1599381361474-4fa6bec04ec6?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image2">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://images.unsplash.com/photo-1580687581604-0e57ffe41812?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image3">
+    </div>
+
+      <!-- Navigation dots -->
+      <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+          <span class="dot"></span>
+      </div>
+  </div>
+  
+  <!-- --------------another sections---------- -->
+  <div class="exhibition-info">
+    <h3>About the Exhibition</h3>
+    <p>Welcome to the annual Art Exhibition, where creativity knows no bounds. Our exhibition showcases a diverse collection of artworks from renowned and emerging artists worldwide. Immerse yourself in the rich tapestry of colors, styles, and stories behind each masterpiece.</p>
+  </div>
+
+  <div class="featured-artists">
+    <h3>Featured Artists</h3>
+    <p>Meet the brilliant minds behind the exhibited artworks. This year, we are proud to feature artists whose unique perspectives and exceptional skills have contributed to making this exhibition a truly captivating experience. Explore their stories and discover the inspiration behind their creations.</p>
+  </div>
+
+  <div class="event-schedule">
+    <h3>Event Schedule</h3>
+    <p>Plan your visit to make the most of our exciting events throughout the exhibition. From live art demonstrations that provide a glimpse into the creative process to interactive sessions where you can engage with artists, there's something for everyone. Don't miss our special events, including art talks, workshops, and more. Check out the schedule below:</p>
+    <ul>
+      <li><strong>Opening Ceremony:</strong> Date & Time</li>
+      <li><strong>Live Art Demonstrations:</strong> Every day at the Main Gallery</li>
+      <li><strong>Artist Meet-and-Greet:</strong> Visit the Artists' Corner on weekends</li>
+      <li><strong>Closing Gala:</strong> Date & Time</li>
+    </ul>
+  </div>
+  <!-- --------------another sections ends here !!---------- -->
+    <!-- footer section -->
+    <div class="footer">
+      <p>&copy; 2023 MyArtExhibition All rights reserved.</p>
+      <p>Address: 123 Main Street, Mumbai, India</p>
+      <p>Phone: <a href=“tel:8898123456”>8898123456</a></p>
+      <p>Email: <a href=“mailto:info@MyArtExhibition.com”>info@MyArtExhibition.com</a></p>
+      <ul class="social-icons">
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+          <li><a href="https://www.LinkedIn.com/" target="_blank">LinkedIn</a></li>
+      </ul>
+  </div>
+  <script>
+    // JavaScript for image slider
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) { 
+            slideIndex = 1;
+        }  
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";  
+        dots[slideIndex - 1].className += " active";
+
+        setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    }
+
+    // Function to navigate to a specific slide
+      function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+      }
+    </script>   
+</body>
+</html>
+

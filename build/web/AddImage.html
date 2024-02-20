@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/MIni_Project/CSS_Pages/CRUD.css">
+    <title>Add Image</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, button {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .message {
+            text-align: center;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Image</h1>
+        <form action="MainServlet" method="post" enctype="multipart/form-data">
+            <label for="image_id">Image Id:</label>
+            <input type="number" name="image_id" required>
+            <label for="image_name">Image Name:</label>
+            <input type="text" name="image_name" required>
+
+            <label for="image_file">Upload Image File:</label>
+            <input type="file" name="image" accept="image/*" required>
+
+            <label for="image_author">Image Author:</label>
+            <input type="text" name="image_author" required>
+
+            <label for="image_price">Image Price:</label>
+            <input type="text" name="image_price" required>
+
+            <button type="submit">Add Image</button>
+        </form>
+        <p class="message" id="addMessage"></p>
+    </div>
+</body>
+</html>
+

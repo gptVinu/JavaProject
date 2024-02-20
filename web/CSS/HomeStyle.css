@@ -1,0 +1,150 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15-Feb-2024, 11:07:07 am
+    Author     : vinyak
+*/
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url("main-bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 7%;
+  }
+
+  header {
+    background-color: #524b4b;
+    color: #fff;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0 0px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+  /* ------slide page of image section------- */
+  .slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* ------------anotherPage Section css------------ */
+.exhibition-info, .featured-artists, .event-schedule {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+/* ----------footer page css------- */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.social-icons li {
+  display: inline;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin: 0 15px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6347;
+}

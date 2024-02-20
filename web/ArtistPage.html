@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtistPage</title>
+    <link rel="stylesheet" href="CSS/ArtistPage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="Logo.png" alt="Art Logo">
+          <h2>ART EXHIBITION</h2>
+        </div>
+        <nav>
+          <a href="HomePage.html">Home</a>
+          <a href="PicturePage.html">Pictures</a>
+          <a href="ArtistPage.html">Artists</a>
+          <a href="BlogPage.html">Blog</a>
+          <a href="ShopPage.html">Shop</a>
+          <a href="CRUD_Main_Page.html">>></a>
+        </nav>
+    </header>
+    <!-- ----------artistGrid section--------------- -->
+    <div class="artist-container">
+        <div class="artist-card" onclick="openArtistDetails('Artist1')">
+          <div class="artist-image">
+            <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 1">
+            <div class="overlay">
+              <div class="artist-name">Takashi Murakami</div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="artist-card" onclick="openArtistDetails('Artist2')">
+          <div class="artist-image">
+            <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 2">
+            <div class="overlay">
+              <div class="artist-name">Kara Walker</div>
+            </div>
+          </div>
+        </div>
+        <div class="artist-card" onclick="openArtistDetails('Artist3')">
+            <div class="artist-image">
+              <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTIZIo4a4eOPDqqmuSuHRdf-iPBRcV_J2CElKsmBtpp8Fb5Zl3zFaPilxzfkyyvMyqkgPsd2C8UtBgdekk" alt="Artist 3">
+              <div class="overlay">
+                <div class="artist-name">Cindy Sherman</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="artist-card" onclick="openArtistDetails('Artist2')">
+            <div class="artist-image">
+              <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 4">
+              <div class="overlay">
+                <div class="artist-name">Kara Walker</div>
+              </div>
+            </div>
+          </div>
+          <div class="artist-card" onclick="openArtistDetails('Artist1')">
+            <div class="artist-image">
+              <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 5">
+              <div class="overlay">
+                <div class="artist-name">Takashi Murakami</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="artist-card" onclick="openArtistDetails('Artist2')">
+            <div class="artist-image">
+              <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 6">
+              <div class="overlay">
+                <div class="artist-name">Kara Walker</div>
+              </div>
+            </div>
+          </div>
+          <div class="artist-card" onclick="openArtistDetails('Artist1')">
+            <div class="artist-image">
+              <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 7">
+              <div class="overlay">
+                <div class="artist-name">Takashi Murakami</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="artist-card" onclick="openArtistDetails('Artist2')">
+            <div class="artist-image">
+              <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 8">
+              <div class="overlay">
+                <div class="artist-name">Kara Walker</div>
+              </div>
+            </div>
+          </div>
+          <div class="artist-card" onclick="openArtistDetails('Artist1')">
+              <div class="artist-image">
+                <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 9">
+                <div class="overlay">
+                  <div class="artist-name">Takashi Murakami</div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="artist-card" onclick="openArtistDetails('Artist2')">
+              <div class="artist-image">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 10">
+                <div class="overlay">
+                  <div class="artist-name">Kara Walker</div>
+                </div>
+              </div>
+            </div>
+            <div class="artist-card" onclick="openArtistDetails('Artist1')">
+              <div class="artist-image">
+                <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 11">
+                <div class="overlay">
+                  <div class="artist-name">Takashi Murakami</div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="artist-card" onclick="openArtistDetails('Artist2')">
+              <div class="artist-image">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 12">
+                <div class="overlay">
+                  <div class="artist-name">Kara Walker</div>
+                </div>
+              </div>
+            </div>
+            <div class="artist-card" onclick="openArtistDetails('Artist1')">
+                <div class="artist-image">
+                  <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 13">
+                  <div class="overlay">
+                    <div class="artist-name">Takashi Murakami</div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="artist-card" onclick="openArtistDetails('Artist2')">
+                <div class="artist-image">
+                  <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 14">
+                  <div class="overlay">
+                    <div class="artist-name">Kara Walker</div>
+                  </div>
+                </div>
+              </div>
+              <div class="artist-card" onclick="openArtistDetails('Artist1')">
+                  <div class="artist-image">
+                    <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 15">
+                    <div class="overlay">
+                      <div class="artist-name">Takashi Murakami</div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="artist-card" onclick="openArtistDetails('Artist2')">
+                  <div class="artist-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 16">
+                    <div class="overlay">
+                      <div class="artist-name">Kara Walker</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="artist-card" onclick="openArtistDetails('Artist1')">
+                  <div class="artist-image">
+                    <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 17">
+                    <div class="overlay">
+                      <div class="artist-name">Takashi Murakami</div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="artist-card" onclick="openArtistDetails('Artist2')">
+                  <div class="artist-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 18">
+                    <div class="overlay">
+                      <div class="artist-name">Kara Walker</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="artist-card" onclick="openArtistDetails('Artist1')">
+                  <div class="artist-image">
+                    <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 19">
+                    <div class="overlay">
+                      <div class="artist-name">Takashi Murakami</div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="artist-card" onclick="openArtistDetails('Artist2')">
+                  <div class="artist-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 2">
+                    <div class="overlay">
+                      <div class="artist-name">Kara Walker</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="artist-card" onclick="openArtistDetails('Artist1')">
+                    <div class="artist-image">
+                      <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 1">
+                      <div class="overlay">
+                        <div class="artist-name">Takashi Murakami</div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="artist-card" onclick="openArtistDetails('Artist2')">
+                    <div class="artist-image">
+                      <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 2">
+                      <div class="overlay">
+                        <div class="artist-name">Kara Walker</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="artist-card" onclick="openArtistDetails('Artist1')">
+                    <div class="artist-image">
+                      <img src="https://blog.artsper.com/wp-content/uploads/2018/11/GettyImages-943748376-644x429.jpg" alt="Artist 1">
+                      <div class="overlay">
+                        <div class="artist-name">Takashi Murakami</div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="artist-card" onclick="openArtistDetails('Artist2')">
+                    <div class="artist-image">
+                      <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT6omgWjsAtqp0HoFXzuz6o-v5Lf0PdOksAyYcvpuPE2TDFZtsfxXOt5kUTNERSWSyv2WeG7orq12x9UPI" alt="Artist 2">
+                      <div class="overlay">
+                        <div class="artist-name">Kara Walker</div>
+                      </div>
+                    </div>
+                  </div>
+    
+      </div>
+    
+      <script>
+        function openArtistDetails(artistName) {
+          // Redirect to the artist details page or implement modal/popup as needed
+          window.location.href = `artist-details.html?artist=${artistName}`;
+        }
+      </script>
+      <!-- footer section -->
+    <div class="footer">
+        <p>&copy; 2023 MyArtExhibition All rights reserved.</p>
+        <p>Address: 123 Main Street, Mumbai, India</p>
+        <p>Phone: <a href=“tel:8898123456”>8898123456</a></p>
+        <p>Email: <a href=“mailto:info@MyArtExhibition.com”>info@MyArtExhibition.com</a></p>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            <li><a href="https://www.LinkedIn.com/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+</body>
+</html>
