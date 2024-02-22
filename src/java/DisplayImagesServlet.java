@@ -12,6 +12,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.io.*;
+import java.util.*;
 import java.sql.*;
 
 /**
@@ -30,6 +32,12 @@ public class DisplayImagesServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
+    private String encodeImageToBase64(InputStream inputStream) throws IOException {
+        byte[] imageBytes = inputStream.readAllBytes();
+        return Base64.getEncoder().encodeToString(imageBytes);
+    }
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -51,8 +59,15 @@ public class DisplayImagesServlet extends HttpServlet {
                     try (ResultSet rs = pstmt.executeQuery()) {
                         // Create the HTML content dynamically
                         StringBuilder htmlContent = new StringBuilder();
-                        htmlContent.append("<div id=\"dbms_img\">");
-
+                        //htmlContent.append("<div id=\"img_cont\" class=\"column\">");
+                        int gr = 0;
+                        StringBuilder htmlCont[] = new StringBuilder[4];
+                        for (int i = 0; i < 4; i++){
+                            htmlCont[i] = new StringBuilder();
+                        }
+                        for (int i = 0; i < 4; i++){
+                            htmlCont[i].append("<div id=\"img_cont\" class=\"column\">");
+                        }
                         while (rs.next()) {
                             int imageId = rs.getInt("image_id");
                             String imageName = rs.getString("image_name");
@@ -60,23 +75,32 @@ public class DisplayImagesServlet extends HttpServlet {
                             String owner = rs.getString("owner");
                             BigDecimal imagePrice = rs.getBigDecimal("image_price");
                             Timestamp createdAt = rs.getTimestamp("created_at");
+                            
+                            String base64EncodedImage = encodeImageToBase64(fileInputStream);
 
                             // Create a child div for each row
-                            htmlContent.append("<div class=\"image-container\">");
-                            htmlContent.append("<p>Image ID: ").append(imageId).append("</p>");
-                            htmlContent.append("<p>Image Name: ").append(imageName).append("</p>");
-                            htmlContent.append("<p>Owner: ").append(owner).append("</p>");
-                            htmlContent.append("<p>Image Price: ").append(imagePrice).append("</p>");
-                            htmlContent.append("<p>Created At: ").append(createdAt).append("</p>");
-                            // You can display the image using an <img> tag if needed
-                            // htmlContent.append("<img src=\"data:image/jpeg;base64,").append(base64EncodedImage).append("\" alt=\"Image\">");
-                            htmlContent.append("</div>");
+                            //htmlContent.append("<div class=\"image-container\">");
+//                            htmlContent.append("<p>Image ID: ").append(imageId).append("</p>");
+//                            htmlContent.append("<p>Image Name: ").append(imageName).append("</p>");
+//                            htmlContent.append("<p>Owner: ").append(owner).append("</p>");
+//                            htmlContent.append("<p>Image Price: ").append(imagePrice).append("</p>");
+//                            htmlContent.append("<p>Created At: ").append(createdAt).append("</p>");
+                            htmlCont[gr].append("<img src=\"data:image/jpeg;base64,").append(base64EncodedImage).append("\" alt=\"Image\" style=\"width:100%\">");
+                            //htmlContent.append("</div>");
+                            gr++;
+                            if (gr == 4){                               
+                                gr = 0;
+                            }
                         }
-
-                        htmlContent.append("</div>");
-
+                        for (int i = 0; i < 4; i++){
+                            htmlCont[i].append("</div>");
+                        }
+                        String mainStr = "";
+                        for (int i = 0; i < 4; i++){
+                            mainStr += htmlCont[i].toString();
+                        }
                         // Write the HTML content to the response
-                        response.getWriter().write(htmlContent.toString());
+                        response.getWriter().write(mainStr);
                     }
                 }
             }
