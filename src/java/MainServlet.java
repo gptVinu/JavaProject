@@ -51,7 +51,7 @@ public class MainServlet extends HttpServlet {
         String imageName = request.getParameter("image_name");
         String imageAuthor = request.getParameter("image_author");
         String imagePrice = request.getParameter("image_price");
-        out.print("bybye");
+       
 
 
         // Fetching the image file

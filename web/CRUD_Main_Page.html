@@ -4,11 +4,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 
-<html lang="en">
+<!--<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/MIni_Project/CSS_Pages/CRUD.css">
     <title>Image CRUD</title>
     <style>
         body {
@@ -64,5 +63,81 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
     </div>
 </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRestaurant</title>
+    <style>
+        .container {
+            cursor: pointer;
+            font-size: 40px;
+            color: red;
+            position: absolute;
+            top:30px;
+            left: 40px;
+        }
+        .SideNav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            background-color: #2C3E50; /* Change background color */
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px; /* Increase top padding for better spacing */
+        }
+        .SideNav a {
+            padding: 20px 8px 20px 32px; /* Increase padding for better spacing */
+            font-size: 25px;
+            color: #ECF0F1; /* Change text color */
+            transition: 0.3s;
+            display: block;
+            text-decoration: none;
+        }
+        .SideNav .CloseButton{
+            position: absolute;
+            right: 25px;
+            top: 15px; /* Adjust the top position */
+        }
+        .SideNav a:hover {
+            color: #3498DB; /* Change text color on hover */
+        }
+
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="SideNavBar" class="SideNav">
+        
+        <a href="#" class="CloseButton" onclick="CloseNav()">&times;</a> 
+
+        <a href="AddImage.html">Add Image</a>
+        <a href="SearchImage.html">Search Image</a>
+        <a href="UpdateImg.html">Update Image Details</a>
+        <a href="DeleteImage.html">Delete Image</a>
+
+    </div>
+
+    <script>
+        function OpenNav() {
+            document.getElementById("SideNavBar").style.width = "250px";
+        }
+
+        function CloseNav() {
+            document.getElementById("SideNavBar").style.width = "0";
+        }
+    </script>
+    <span class="container" onclick="OpenNav()" ondblclick="CloseNav()">
+        &#9776; 
+    </span>
+    
+</body>
 </html>
+
 

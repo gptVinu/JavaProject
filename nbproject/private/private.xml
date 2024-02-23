@@ -4,19 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/HomePage.html</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/src/java/DeleteImageServlet.java</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/CRUD_Main_Page.html</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/src/java/MainServlet.java</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/AddImage.html</file>
             <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/CSS/PicturePage.css</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/src/java/DisplayImagesServlet.java</file>
             <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/PicturePage.html</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/src/java/SearchImageServlet.java</file>
+            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/CSS/HomeStyle.css</file>
+            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/ShopPage.html</file>
+            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/CSS/ArtistPage.css</file>
+            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/CRUD_Main_Page.html</file>
+            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/ArtistPage.html</file>
+            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/BlogPage.html</file>
             <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/CSS/ShopPage.css</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/SearchImage.html</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/DeleteImage.html</file>
-            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/vinyak/OneDrive/Documents/NetBeansProjects/Java_Project/web/CSS/BlogPage.css</file>
         </group>
     </open-files>
 </project-private>
